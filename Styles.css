@@ -4,6 +4,21 @@ html,body{
 
 
 /* Section for Navbar Styling */
+.vl {
+  border-left: 2px solid black;
+  height: 90%;
+  border-radius: 0 !important;
+}
+
+@media only screen and (max-width: 600px) {
+
+    #welcome-section{
+        background-color: lightblue;
+    }
+  }
+
+
+/*-----Navbar Styles-----*/
 #navbar{
     position: fixed;
     top: 0;
@@ -18,14 +33,33 @@ li{
     padding: 10px;
     margin-right: 40px;
     float: right;
+    width: 100vw;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EFEFEF;
+    height: 10vh;
+    float: right;
+    direction: rtl;
+}
+ul{
+    height: 100%;
+    margin: 0px;
+    display: flex;
+}
+li{
+    display: inline;
+    /* padding: 10px; */
+    min-width: 100px;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 10vh;
 }
 li:hover{
-    background-color: gray;
+    background-color: #ff8b3d;
     height: 100%;
 }
 
 a{
-    color: white;
+    color: #EFEFEF;
     text-decoration: none;
 }
 
@@ -51,3 +85,62 @@ a{
 
 }
 
+/*-----Welcome section Styles-----*/
+
+#welcome-section{
+    height: 100vh;
+    background-color:#112B3C;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EFEFEF;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+sub{
+    float: right;
+    color: #ff8b3d;
+}
+/*-----projects section Styles-----*/
+#projects{
+    height: 100vh;
+    background-color:#EFEFEF;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #112B3C;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.Project{
+    height: 40vh;
+    width: 20vw;
+    background-color:#112B3C;
+    color: #EFEFEF;
+}
+
+/*-----Links section Styles-----*/
+#Links{
+    height: 50vh;
+    background-color:#205375;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #EFEFEF;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+
+}
+#Links > div {
+    padding: 10px;
+    border-radius: 5px;
+}
+#Links > div :hover{
+    background-color: #112B3C;
+}

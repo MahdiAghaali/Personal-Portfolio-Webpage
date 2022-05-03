@@ -9,13 +9,6 @@ html,body{
   border-radius: 0 !important;
 }
 
-@media only screen and (max-width: 600px) {
-
-    #welcome-section{
-        background-color: lightblue;
-    }
-  }
-
 
 /*-----Navbar Styles-----*/
 #navbar{
@@ -91,6 +84,8 @@ sub{
     width: 20vw;
     background-color:#112B3C;
     color: #EFEFEF;
+    text-align: center;
+    padding-top: 25px;
 }
 
 /*-----Links section Styles-----*/
@@ -114,3 +109,13 @@ sub{
 #Links > div :hover{
     background-color: #112B3C;
 }
+
+
+
+
+/* Media query section */
+@media only screen and (max-width: 600px) {
+    .mahdi-projects, .valentine-projects{
+        color: #F66B0E;
+    }
+  }
